@@ -19,10 +19,6 @@ const expandResult = (key) => {
     return resultsList[key];
 }
 
-// Hooks.on("ready", () => {
-//     console.log("EZ Chat Result | whats up");
-// })
-
 Hooks.on("renderChatLog",  (application, html, data) => {
     html.on("click","li .ez-chat-result .controls button", (ev) => {
         // console.log(ev)
@@ -56,7 +52,11 @@ Hooks.on("renderChatLog",  (application, html, data) => {
 
 Hooks.on("renderChatMessage", (application, html, data) => {
     const message = getMessage(html);
-    // console.log(message, data)
+
+    // console.log(message);
+    if (!message.isRoll) {
+        return;
+    }
 
     const result = message.getFlag("ez-chat-result", "result")
 
