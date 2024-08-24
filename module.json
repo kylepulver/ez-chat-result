@@ -5,11 +5,11 @@
   "authors": [
     {
       "name": "kyle pulver",
-      "url": "https://github.com/"
+      "url": "https://github.com/kylepulver/ez-chat-result"
     }
   ],
-  "url": "https://github.com/",
-  "version": "1",
+  "url": "https://github.com/kylepulver/ez-chat-result",
+  "version": "2",
   "compatibility": {
     "minimum": "12",
     "verified": "12.331",
@@ -33,7 +33,6 @@
   "packs": [],
   "relationships": {
     "systems": [
-
     ],
     "requires": [
     ],
@@ -57,9 +56,9 @@
     }
   },
   "socket": false,
-  "manifest": "module.json",
-  "download": "module.zip",
-  "readme": "https://github.com/",
+  "manifest": "https://github.com/kylepulver/ez-chat-result/module.json",
+  "download": "https://github.com/kylepulver/ez-chat-result/archive/refs/heads/main.zip",
+  "readme": "https://github.com/kylepulver/ez-chat-result",
   "protected": false,
   "coreTranslation": false,
   "library": false
