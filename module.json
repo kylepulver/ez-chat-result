@@ -1,0 +1,66 @@
+{
+    "id": "ez-chat-result",
+    "title": "EZ Chat Result",
+    "description": "Append results of checks to chat cards.",
+  "authors": [
+    {
+      "name": "kyle pulver",
+      "url": "https://github.com/"
+    }
+  ],
+  "url": "https://github.com/",
+  "version": "1",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.331",
+    "maximum": "12"
+  },
+  "esmodules": [
+    "chatresult.js"
+  ],
+  "scripts": [
+  ],
+  "styles": [
+    "chatresult.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "en.json"
+    }
+  ],
+  "packs": [],
+  "relationships": {
+    "systems": [
+
+    ],
+    "requires": [
+    ],
+    "optional": [],
+    "flags": {
+      "optional": []
+    }
+  },
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "html",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "styles",
+        "languages"
+      ]
+    }
+  },
+  "socket": false,
+  "manifest": "module.json",
+  "download": "module.zip",
+  "readme": "https://github.com/",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
+}

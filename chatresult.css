@@ -1,0 +1,64 @@
+.ez-chat-result .controls {
+    display:flex; 
+    justify-content: space-evenly;
+}
+
+.ez-chat-result .controls button {
+    font-size: 95%;
+    white-space: nowrap;
+    padding: 0 0.2em;
+    line-height: 1.2;
+    /* background: #fff;
+    padding: 0 0.25em; */
+}
+
+.ez-chat-result .result {
+    text-align: center;
+    font-size: 95%;
+}
+
+.ez-chat-result .result.result-cf {
+    color: #802;
+    background: #f084;
+    text-shadow: 0 0 0 #f00, 1px 1px 0 #fff;
+}
+
+.ez-chat-result .result.result-f {
+    color: #400;
+    background: #f002;
+    text-shadow: 0 0 0 #f00, 1px 1px 0 #fff;
+}
+
+.ez-chat-result .result.result-s {
+    color: #080;
+    background: #0f02;
+    text-shadow: 1px 1px 0 #fff, 0 0 0 #0f0;
+}
+
+.ez-chat-result .result.result-cs {
+    color: #04f;
+    background: #0ff4;
+    text-shadow: 1px 1px 0 #fff, 0 0 0 #0ff;
+
+}
+
+.ez-chat-result .hover-container .hover-child {
+    display: none;
+}
+.ez-chat-result .hover-container:hover .hover-child  {
+    display: block;
+}
+
+.ez-chat-result .hover-container .hover-on {
+    display: none;
+}
+.ez-chat-result .hover-container:hover .hover-on  {
+    display: block;
+}
+
+.ez-chat-result .hover-container .hover-off {
+    display: block;
+}
+.ez-chat-result .hover-container:hover .hover-off  {
+    display: none;
+}
