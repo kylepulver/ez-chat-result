@@ -21,7 +21,6 @@ const expandResult = (key) => {
 
 Hooks.on("renderChatLog",  (application, html, data) => {
     html.on("click","li .ez-chat-result .controls button", (ev) => {
-        // console.log(ev)
         const result = ev.target.dataset.result;
         const message = (getMessage(ev.target.closest("li")));
         if (!resultsList.hasOwnProperty(result)) {
@@ -33,27 +32,9 @@ Hooks.on("renderChatLog",  (application, html, data) => {
     })
 });
 
-// Hooks.on("getChatLogEntryContext", (application, entryOptions) => {
-//     console.log("EZ Chat Result | Chat Log Entry Context");
-//     console.log(application);
-//     console.log(entryOptions);
-    // entryOptions.push({
-    //     name: "Test <em data-aaa='hi'>WHAT</em>",
-    //     condition: (li) => {
-    //         return true;
-    //     },
-    //     icon: "",
-    //     callback: async (li) => {
-    //         const message = getMessage(li);
-    //         console.log(message);
-    //     }
-    // })
-// })
-
 Hooks.on("renderChatMessage", (application, html, data) => {
     const message = getMessage(html);
 
-    // console.log(message);
     if (!message.isRoll) {
         return;
     }
