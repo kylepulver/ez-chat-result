@@ -19,7 +19,7 @@ const expandResult = (key) => {
     return resultsList[key];
 }
 
-Hooks.on("renderChatLog",  (application, html, data) => {
+Hooks.on("renderChatLog", (application, html, data) => {
     html.on("click","li .ez-chat-result .controls button", (ev) => {
         const result = ev.target.dataset.result;
         const message = (getMessage(ev.target.closest("li")));
@@ -71,7 +71,7 @@ Hooks.on("renderChatMessage", (application, html, data) => {
             </div>
             `
             
-            html.append(template)
+            html.find('.message-header').after(template)
         }
     }
 
