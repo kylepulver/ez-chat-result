@@ -38,6 +38,9 @@ Hooks.on("renderChatMessage", (application, html, data) => {
     if (!message.isRoll) {
         return;
     }
+    if (!message.isCheckRoll) {
+        return;
+    }
 
     const result = message.getFlag("ez-chat-result", "result")
 

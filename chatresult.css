@@ -1,13 +1,17 @@
 .ez-chat-result .controls {
     display:flex; 
     justify-content: space-evenly;
+    margin: 2px 0;
+    gap: 2px;
 }
 
 .ez-chat-result .controls button {
     font-size: 95%;
     white-space: nowrap;
     padding: 0 0.2em;
-    line-height: 1.2;
+    line-height: 1.25;
+    margin: 0;
+    border: solid 1px #0002;
 }
 
 .ez-chat-result .result {
@@ -15,7 +19,7 @@
     font-size: 95%;
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
+    line-height: 1.25;
     border: 1px solid transparent;
 }
 
